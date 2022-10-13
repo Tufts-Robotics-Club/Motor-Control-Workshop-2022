@@ -1,4 +1,4 @@
-#https://www.digikey.com/en/maker/blogs/2021/how-to-control-servo-motors-with-a-raspberry-pi 
+# https://www.digikey.com/en/maker/blogs/2021/how-to-control-servo-motors-with-a-raspberry-pi 
 from gpiozero import Servo # Importing Servo library
 from time import sleep # Importing sleep 
 
