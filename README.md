@@ -18,7 +18,7 @@ The sample code available for Raspberry Pi is as follows:
 
 - `read_local_camera_feed.py`
     - Reads and displays, using OpenCV, a video feed from a local PiCamera
-    - Should be run on Raspberry Pi
+    - Should be run on Raspberry Pi with a monitor attached
 
 - `read_remote_camera_feed.py`
     - Reads and displays, using OpenCV, a video feed being streamed over TCP

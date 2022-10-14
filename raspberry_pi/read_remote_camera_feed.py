@@ -9,7 +9,7 @@ import cv2
 
 # get IP address and port of video stream from environment variables
 ADDRESS = os.environ.get("VIDEO_STREAM_ADDRESS","localhost")
-PORT = os.environ.get("VIDEO_STREAM_PORT", "5000")
+PORT = os.environ.get("VIDEO_STREAM_PORT", "9000")
 
 # connect to video stream
 stream = cv2.VideoCapture(f"tcp://{ADDRESS}:{PORT}")
