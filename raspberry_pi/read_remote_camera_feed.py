@@ -7,6 +7,13 @@ import os
 import cv2
 
 
+'''
+command to stream camera feed from pi on port 9000:
+
+/usr/bin/gst-launch-1.0 v4l2src ! video/x-h264,width=640,height=480,framerate=30/1 ! h264parse config-interval=1 ! matroskamux streamable=true ! tcpserversink host=::0 port=9000 sync=false sync-method=2
+'''
+
+
 # get IP address and port of video stream from environment variables
 ADDRESS = os.environ.get("VIDEO_STREAM_ADDRESS","localhost")
 PORT = os.environ.get("VIDEO_STREAM_PORT", "9000")
